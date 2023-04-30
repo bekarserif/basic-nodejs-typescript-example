@@ -61,7 +61,7 @@ export const login = async (req: Request, res: Response) => {
 
     await user.save();
 
-    res.cookie('SERIF-AUTH', user.authentication.sessionToken, {
+    res.cookie('TYPESCRIPT-APP-AUTH', user.authentication.sessionToken, {
       domain: 'localhost',
       path: '/',
     });
